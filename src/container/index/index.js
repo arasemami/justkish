@@ -3,14 +3,12 @@ import React, {Component } from 'react';
 import './style.css'
 
 
-import HeaderComponent from '../../component/header/header';
 import SliderComponent from '../../component/index/slider/slider';
-import LineBorderComponent from '../../component/index/lineBorder/lineBorder';
-import VitrinComponent from '../../component/index/vitrin/vitrinComponent';
 import NewsLatterComponent from '../../component/index/newslatter/newslatterComponent';
-import FooterMenuComponent from '../../component/index/footerMenu/footerMenuComponent';
-import ContactUsComponent from '../../component/index/contactUs/contactUs';
+// import FooterMenuComponent from '../../component/index/footerMenu/footerMenuComponent';
+// import ContactUsComponent from '../../component/index/contactUs/contactUs';
 import UnderHeaderComponent from '../../component/index/underHeader/underHeaderComponent';
+import VitrinComponent from '../../component/vitrin/vitrinComponent';
 
 
 class IndexComponent extends Component {
@@ -24,8 +22,7 @@ class IndexComponent extends Component {
                 <SliderComponent /> 
                 <UnderHeaderComponent />
                 <div style={{backgroundColor:'#F4F5F5'}}>
-                <LineBorderComponent  title="تورهای تفریحی"/>
-                <VitrinComponent />
+                    <VitrinComponent />
                 </div>
               
         

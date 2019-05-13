@@ -1,0 +1,67 @@
+
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 40px;
+
+}
+
+.vitrin-image-container {
+    position: relative; 
+    justify-content: center; 
+    display: flex;
+
+}
+.vitrin {
+    padding: 15px;
+}
+
+.vitrin .col-20 {
+    background-color: #FCFCFC;
+
+}
+
+.vitrin .col-20 ul , .vitrin .col-20 h2  {
+    padding: 15px;
+
+    
+}
+ 
+.vitrin .col-20 ul li {
+    color: #676767;
+    text-align: right;
+
+}
+
+.vitrin-image-container h1 {
+    position: absolute;
+    z-index: 9999;
+    padding: 90px 50px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.vitrin-image-container h2 {
+    position: absolute;
+    z-index: 9999; 
+    text-align: center;
+    color: #f3f3f3;
+    padding-top: 30px;
+
+
+}
+
+.vitrin-image {
+    width: 100%;
+    padding: 0!important;
+
+}
