@@ -22,12 +22,12 @@ class VitrinComponent extends Component {
                             <CradComponent title="dfsdfsdfsdf"/> 
                         </div>
                         <div className="col-30 bg-black vitrin-image-container"> 
-                            <h1>بـــهترین هــای جزیره زیبای کیش</h1>
-                            <img src={img01} alt="" className="vitrin-image"  />
+                            <h1>{this.props.title}</h1>
+                            <img src={this.props.image} alt="" className="vitrin-image"  />
                            
                         </div>
                         <div className="col-20 bg-red">
-                            <h2>گردشگری و تفریحی</h2>
+                            <h2>{this.props.category}</h2>
                             <ul>
                                 <li>تفریحات دریایی</li>
                                 <li>کشتی های تفریحی</li>
