@@ -1,0 +1,13 @@
+
+
+.select-data-icon {
+    width: 25px;
+    height: 28px;
+    background-image: url('../../../assets//icons/date.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+ 

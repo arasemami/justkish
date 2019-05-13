@@ -1,0 +1,28 @@
+
+
+.shoping-container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    box-shadow: 0 1px 8px #E8E8E8;
+
+
+}
+
+
+.icon-empty-shoping {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    background: url('../../assets/images/empty_shop.png');
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+
+}

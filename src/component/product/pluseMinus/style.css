@@ -1,0 +1,82 @@
+.p-m-container { 
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 5px;
+    padding: 10px 0; 
+    z-index: 9999999;
+    
+
+}
+
+.p-m-cards {
+    width: 50%;
+    height: 48px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+
+}
+
+.p-m-cards p {
+    padding: 0 5px;
+}
+.p-m-cards span {  
+    color: #999999;
+    font-size: 10px;
+    direction: rtl;
+
+}
+ 
+.p-m-cover {
+    background-color: #ececec; 
+    border-radius: 500px;
+    justify-content: space-between;
+    padding: 0 13px;
+}
+
+.p-m-btn-circle {
+    color: #bdbdbd; 
+    border-radius: 500px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;    width: 25px;
+    height: 25px;
+    border-radius: 500px; 
+    transition: all .2s linear;
+    cursor: pointer;
+
+}
+
+.p-m-btn-circle:hover {
+   background-color: rgb(196, 196, 196);
+   box-shadow: 0 1px 8px #E8E8E8;
+   color: #ffffff
+
+
+
+}
+
+.p-m-txt-decoration {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5d5d5d;
+}
+
+.p-m-cover-center {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.invisible {
+    display: none
+}

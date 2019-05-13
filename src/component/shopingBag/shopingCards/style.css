@@ -1,0 +1,167 @@
+
+.shpoing-card-container { 
+    background-color: #f9f9f9;
+    border-top: 1px   solid #f1f1f1;
+    border-bottom: 1px   solid #f1f1f1;
+  
+}
+
+.shpoing-card-border {
+    border-top: 1px   solid #f1f1f1;
+    border-bottom: 1px   solid #f1f1f1;
+}
+
+.shpoing-card-col {
+    width: 20%; 
+    background-color: #fcfcfc; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.shpoing-card-col-larg {
+    width: 40%;   
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; 
+
+}
+
+.shoping-card-image-cover { 
+    width: 40%; 
+    padding: 10px;
+}
+
+.shoping-card-title-cover { 
+    width: 70%;
+    height: 100px;
+    direction: rtl;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+
+
+.shoping-table-header {
+    /* background-color: #f3f3f3;
+    border:0!important;
+    border-top: 1px   solid #f1f1f1;
+    border-bottom: 1px   solid #f1f1f1; */
+
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  
+ 
+  
+  th, td {
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+/*
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+===========================================================  Resposive  ======================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+*/
+
+
+
+@media screen and (max-width: 800px){
+
+    .shpoing-card-container {
+        flex-direction: column-reverse;
+
+    }
+    .shpoing-card-col{
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #f1f1f1;
+
+    }
+
+    .shpoing-card-col-larg {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .shoping-card-title-cover  { 
+        width: 100%; 
+        padding: 10px 0;
+        align-items: center; 
+    
+    }
+
+    .shoping-card-image-cover {  
+        padding: 10px;
+    }
+    td {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    th {
+        display: none;
+
+    }
+
+    th:hover {
+        background-color: #333333;
+    }
+
+    td img {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+
+  
+

@@ -1,0 +1,146 @@
+
+
+
+.cards-post {
+    width:31%; 
+    background-color: red;
+    margin:  10px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 1px 8px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.12);
+    transition: .3s box-shadow;
+    -moz-transition: .3s box-shadow;
+    -webkit-transition: .3s box-shadow; 
+    cursor: pointer;
+}
+.cards-post:hover {
+    box-shadow: 10px 10px 27px 0 rgba(0,0,0,.1);
+    transform: translateY(-3px);
+    transition: ease .3s box-shadow,ease .3s transform;
+}
+
+
+.cards-image-box {
+    background-color: #eeeeee;
+    height: 180px;
+    border-radius: 5px 5px 0 0 ;
+
+}
+
+.cards-image-box img {
+    position: inherit;
+    top: 0;
+    width: 100%; 
+    background: #f2f2f2 url('../../assets//images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 60px 50px;
+    -moz-background-size: 60px 50px;
+    -webkit-background-size: 60px 50px;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+
+}
+
+.cards-title{
+    direction: rtl;
+    text-align: right;
+    padding: 15px;
+    font-size: 18px;
+    color: #555555;
+    background-color: #ffffff;
+    border-bottom: 1px solid #EDEDED; 
+    width: 100%;
+    display: inline-block;
+
+}
+
+.cards-price { 
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px; 
+    color: #54C971;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ffffff;
+    border-bottom: 1px solid #EDEDED; 
+    width: 100%;
+
+    
+}
+ 
+
+.cards-price-child {
+    display: flex;
+    justify-content: space-between
+}
+
+
+.cards-ex-price {
+    color: #9a9a9a;
+    font-size: 12px;
+    text-align: center; 
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+===========================================================  Resposive  ======================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+*/
+
+
+
+@media screen and (max-width: 1064px){
+
+      
+        .cards-post {
+            width:47.33%;   
+        }
+
+}
+ 
+
+
+
+@media screen and (max-width: 810px){
+
+      
+    .cards-post {
+        width:96.33%;   
+    }
+
+}
+
+
+

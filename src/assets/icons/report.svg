@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="11"
+   height="11"
+   viewBox="0 0 11 11"
+   fill="none"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="report.svg">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="680"
+     inkscape:window-height="480"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="27.40483"
+     inkscape:cx="0.40965624"
+     inkscape:cy="5.4999999"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M9.41815 0.576767C9.334 0.54285 7.33566 -0.239433 5.78081 0.585017C4.54881 1.23897 2.38621 0.748367 1.83346 0.606467V0.183333C1.83346 0.08195 1.75151 0 1.65013 0C1.54875 0 1.4668 0.08195 1.4668 0.183333V0.733333C1.4668 0.7359 1.46808 0.7381 1.46826 0.740667C1.46826 0.742867 1.4668 0.7447 1.4668 0.7469V6.05V6.2469V10.8167C1.4668 10.918 1.54875 11 1.65013 11C1.75151 11 1.83346 10.918 1.83346 10.8167V6.48542C2.25018 6.58937 3.15841 6.78462 4.10093 6.78462C4.75305 6.78462 5.42093 6.69093 5.95278 6.40897C7.35565 5.66445 9.26305 6.4097 9.28211 6.41722C9.33876 6.43995 9.40256 6.43298 9.45298 6.39852C9.50321 6.3646 9.53346 6.30777 9.53346 6.2469V0.7469C9.53346 0.671917 9.48781 0.604633 9.41815 0.576767ZM9.1668 5.98858C8.56913 5.79828 7.0317 5.42098 5.78081 6.08483C4.549 6.7386 2.38713 6.24837 1.83346 6.10647V6.05V0.985417C2.53985 1.1616 4.65331 1.5983 5.95278 0.908967C7.15655 0.270417 8.73175 0.728383 9.1668 0.875783V5.98858Z"
+     fill="#9E9E9E"
+     id="path4"
+     style="fill:#9e9e9e;fill-opacity:1" />
+</svg>

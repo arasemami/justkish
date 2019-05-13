@@ -1,0 +1,32 @@
+
+  .input-label textarea {
+    -webkit-appearance: none;
+    width: 100%;
+    font-family: inherit;
+    padding: 12px 5px 12px 0px;
+    height: 40px;
+    border:1px solid #eee;
+    font-size: 14px;
+    background: none;
+    border-radius: 5px;
+    color: #223254;
+    background-color: #fff;
+    transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
+    resize: none;
+    min-height: 200px;
+    direction: rtl;
+  }
+
+
+
+
+  .input-label textarea:not(:placeholder-shown) + .span-label ,   .input-label textarea:focus + .span-label  {
+    color: #0090CF  ;
+    top: -8px;
+    font-size: 10px;
+    z-index: 4;
+    transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
+    user-select: none;
+
+  }
+

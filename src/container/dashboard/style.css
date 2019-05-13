@@ -1,0 +1,138 @@
+
+
+.dashboard-left-side { 
+    width: 75%; 
+    padding: 10px;
+
+
+}
+ 
+.dashboard-right-side { 
+    width: 25%; 
+    padding: 10px;
+
+    
+}
+
+.dashboard-menu-right { 
+    background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+    border-radius: 2px; 
+    box-shadow: 0 1px 8px #E8E8E8;
+    margin-bottom: 10px;
+
+}
+
+.dashboard-menu-right  ul li {
+    text-align: right;
+    padding: 10px; 
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    color: #333333;
+    transition: background-color 0.5s ease-out;
+    
+}
+
+.dashboard-menu-right  ul li:hover {
+    background-color: #fcb800;
+    cursor: pointer;
+    
+}
+
+.dashboard-box-left { 
+    background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+    border-radius: 2px; 
+    box-shadow: 0 1px 8px #E8E8E8; 
+
+}
+
+.dashboard-profile-container {  
+    padding: 10px;
+
+}
+
+.dashboard-profile-container-avatar { 
+    width: 30%;  
+    justify-content: center;
+    display: flex;
+    align-content: center;
+  
+
+}
+
+.dashboard-profile-container-wallet { 
+    width: 70%; 
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;  
+}
+
+.dashboard-avatar {
+    height: 60px;
+    width: 60px;
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 10px #dddddd;
+    border-radius: 200px; 
+    background: url('../../assets/icons/avatar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+
+
+
+
+/*
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+===========================================================  Resposive  ======================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+=================================================================================================================================================================================
+*/
+
+
+
+@media screen and (max-width: 930px){
+ 
+ 
+
+    .dashboard-profile-container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashboard-profile-container-wallet , .dashboard-profile-container-avatar{
+        width: 100%; 
+        align-items: center;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 775px){
+ 
+ 
+
+    .row-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .dashboard-left-side , .dashboard-right-side {
+        width: 100%;
+
+    }
+
+
+
+}

@@ -1,0 +1,15 @@
+
+
+.index-slider {
+    background-color: #F0F0F0;
+    height: 300px;
+    
+}
+
+.slider-custom {
+    height: 400px;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
