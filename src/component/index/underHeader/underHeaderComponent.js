@@ -17,19 +17,19 @@ class UnderHeaderComponent extends Component {
             <div className="container-fluid">
                 <div className="container">
                    <div className="row under-header">
-                        <div className="col-25  ">
+                        <div className="col-25  swing">
                             <div className="row">
-                                <div className="col-80">
+                                <div className="col-80 ">
                                     <h3>پشتیبانی 7/24</h3>
                                     <p>در 7 روز هفته و به صورت 24 ساعته، پاسخگوی شمایم</p>
                                 </div>
                                 <div className="col-20">
-                                    <img src={img04} alt="" className="undermenu-image-siz" />
+                                    <img src={img04} alt="" className="undermenu-image-siz " />
                                 </div>
                             </div>
                         </div>
                        
-                        <div className="col-25  border-left">
+                        <div className="col-25 swing border-left">
                             <div className="row">
                                 <div className="col-80">
                                     <h3>پرداخت امن و قابل اطمینان</h3>
@@ -41,7 +41,7 @@ class UnderHeaderComponent extends Component {
                             </div>
                         </div>
 
-                        <div className="col-25  border-left">
+                        <div className="col-25 swing border-left">
                             <div className="row">
                                 <div className="col-80">
                                     <h3>بازگشت پول و کنسلی</h3>
@@ -53,7 +53,7 @@ class UnderHeaderComponent extends Component {
                             </div>
                         </div>
 
-                        <div className="col-25 border-left ">
+                        <div className="col-25 swing border-left ">
                             <div className="row">
                                 <div className="col-80">
                                     <h3>خرید آسان و سریع</h3>

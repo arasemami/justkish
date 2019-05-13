@@ -18,8 +18,7 @@
 
 .icon-empty-shoping {
     width: 150px;
-    height: 150px;
-    background-color: red;
+    height: 150px; 
     background: url('../../assets/images/empty_shop.png');
     background-position: center;
     background-size: contain;
