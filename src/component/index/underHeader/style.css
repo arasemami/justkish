@@ -68,16 +68,22 @@
 }
 
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 533px){
  
     .under-header .col-25 .row{
         flex-direction: column-reverse
     }
-    .under-header .col-80 {
+    .under-header .col-80, .under-header .col-20 {
         text-align: center;
+        width: 100%;
 
     }
 
+    .undermenu-image-siz {
+        width: 90px;
+        height: 90px; 
+    
+    }
 
 
 }
