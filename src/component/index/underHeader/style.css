@@ -15,6 +15,10 @@
 
 }
 
+.under-header .col-80 {
+    padding: 0 15px;
+
+}
 .under-header  .col-25 .row {
     display: flex;
     align-items: center;

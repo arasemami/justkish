@@ -3,6 +3,7 @@ import React , { Component } from 'react';
 import './style.css'; 
 
 import img01 from '../../assets/images/cat-01.png'
+import CradComponent from '../cards/cards'
 
 class VitrinComponent extends Component {
     constructor(props) {
@@ -14,7 +15,12 @@ class VitrinComponent extends Component {
             <div className="container-fluid">
                <div className="container">
                     <div className="row vitrin">
-                        <div className="col-50  bg-yellow "></div>
+                        <div className="col-50  " style={{backgroundColor:'#FFFFFF'}}>
+                            <CradComponent title="dfsdfsdfsdf"/> 
+                            <CradComponent title="dfsdfsdfsdf"/> 
+                            <CradComponent title="dfsdfsdfsdf"/> 
+                            <CradComponent title="dfsdfsdfsdf"/> 
+                        </div>
                         <div className="col-30 bg-black vitrin-image-container"> 
                             <h1>بـــهترین هــای جزیره زیبای کیش</h1>
                             <img src={img01} alt="" className="vitrin-image"  />
@@ -23,13 +29,13 @@ class VitrinComponent extends Component {
                         <div className="col-20 bg-red">
                             <h2>گردشگری و تفریحی</h2>
                             <ul>
-                                <li>menu</li>
-                                <li>menu</li>
-                                <li>menu</li>
-                                <li>menu</li>
-                                <li>menu</li>
-                                <li>menu</li>
-                                <li>menu</li>
+                                <li>تفریحات دریایی</li>
+                                <li>کشتی های تفریحی</li>
+                                <li>مجموعه های تفریحی</li>
+                                <li>اجاره خودرو</li>
+                                <li>جنگ و کنسرت</li>
+                                <li>رستوران و کافی شاپ</li>
+                                <li>پیشنهاد های ویژه</li>
                             </ul>
                         </div>
 
