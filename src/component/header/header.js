@@ -193,7 +193,7 @@ class HeaderComponent extends Component {
                 </div>
 
 
-                <div className="container-fluid header-down" >
+                {/* <div className="container-fluid header-down" >
                     <div className="container" >
                         
                             <ul>
@@ -205,7 +205,7 @@ class HeaderComponent extends Component {
                             </ul>
                        
                     </div>
-                </div>
+                </div> */}
 
 
 
