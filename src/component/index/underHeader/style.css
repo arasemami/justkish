@@ -2,31 +2,25 @@
 .undermenu-image-siz {
     width: 50px;
     height: 50px; 
-
-
 }
 
  
 
 .border-left {
     border-left: 1px solid #D8D8D8;
-
 }
 
 .under-header {
     padding: 40px 0;
-
 }
 
 .under-header .col-80 {
     padding: 0 15px;
-
 }
 .under-header  .col-25 .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .swing:hover
