@@ -3,6 +3,7 @@ import BackgroundSlideshow from 'react-background-slideshow'
 import image1 from '../../../assets/images/001.jpg'
 import image2 from '../../../assets/images/002.jpg'
 import image3 from '../../../assets/images/003.jpg'
+import Input from '../../../component/common/input/Input';
 
 import './style.css';
 
@@ -16,6 +17,45 @@ class SliderComponent extends Component {
 
         const renderHotelBar = (
             <div className="bar-container">
+                <ul>
+                    <li>
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label=""  // title of text 
+                        />  
+                    </li>
+                    <li>
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label=""  // title of text 
+                        />  
+                    </li>
+                    <li>
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label=""  // title of text 
+                        />  
+                    </li>
+                    <li></li>
+                    <li>
+                        <p>serarch</p>
+                    </li>
+                </ul>   
+
+ 
+
 
             </div>
         )
