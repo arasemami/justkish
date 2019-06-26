@@ -13,3 +13,9 @@
     padding: 0;
     margin: 0;
 }
+
+.bg-slider {
+    width: 100%;
+    background-color: red;
+    height: 100%;
+}

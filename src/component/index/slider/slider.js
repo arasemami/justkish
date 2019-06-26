@@ -16,8 +16,16 @@ class SliderComponent extends Component {
         return ( 
             <div className="container-fluid   slider-custom"   >
                 
-                        <BackgroundSlideshow images={[ image1, image2, image3 ]} className=""  />
-
+                        {/* <BackgroundSlideshow images={[ image1, image2, image3 ]} className=""  /> */}
+                    <div className="bg-slider">
+                        <div className="slider-tab-container">
+                            <ul>
+                                <li>هتل</li>
+                                <li>گردشگری</li>
+                                <li>خرید و فروش</li>
+                            </ul>
+                        </div>
+                    </div>
              
              
             </div>
