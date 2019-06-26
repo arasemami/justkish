@@ -16,10 +16,13 @@ class SliderComponent extends Component {
         super(props);
         this.state = {  }
     }
+    componentDidMount =() => {
+        this._openTab('hotel')
+    }
 
 
 
-    _openTab  = (e) => {
+    _openTab  = (key) => {
    
 
          let btns = document.getElementsByClassName("sliderTab");
@@ -30,7 +33,7 @@ class SliderComponent extends Component {
                     this.className += " active-tab";
                 });
         }
-        this.insertParam('sys',e.target.id)
+        this.insertParam('sys',key)
     }
 
 
@@ -255,9 +258,9 @@ class SliderComponent extends Component {
                     <div className="bg-slider">
                         <div className="slider-tab-container">
                             <ul>
-                                <li id="hotel" className="sliderTab active-tab" onClick={this._openTab}>هتل</li>
-                                <li id="entertainment" className="sliderTab" onClick={this._openTab}>گردشگری</li>
-                                <li id="shop" className="sliderTab" onClick={this._openTab}>خرید و فروش</li>
+                                <li id="hotel" className="sliderTab active-tab" onClick={() => this._openTab('hotel')}>هتل</li>
+                                <li id="entertainment" className="sliderTab" onClick={() => this._openTab('entertainment')}>گردشگری</li>
+                                <li id="shop" className="sliderTab" onClick={() => this._openTab('shop')}>خرید و فروش</li>
                             </ul>
                         </div>
                         <div className="slider-main-container">
