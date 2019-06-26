@@ -30,19 +30,19 @@
 
 .slider-tab-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     background-color: yellow;
     width: 1200px;
     margin: auto; 
   
-    justify-content: flex-start; 
+    justify-content: flex-end; 
  
 
 
 }
 .slider-tab-container ul {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row-reverse; 
     background-color: green; 
  
 
