@@ -56,6 +56,15 @@ class HeaderComponent extends Component {
 
         return (
             <div className="header">
+            {/* <div className="container-fluid header-up city-container" >
+                <ul>
+                    <li>آتنکارا</li>
+                    <li>آتنکارا</li>
+                    <li>آتنکارا</li>
+                    <li>آتنکارا</li>
+                </ul>
+            </div> */}
+
               <div className="container-fluid header-up" >
                     <div className="container" >
                         <div className="header-up-left">
@@ -69,7 +78,7 @@ class HeaderComponent extends Component {
                             </ul>
                         </div>
                         <div className="header-up-right">
-                            <ul>
+                            {/* <ul>
                                 <li >مشاور املاک</li>
                                 <li className="border-left-navbar">صرافی</li>
                                 <li className="border-left-navbar">خرید و فروش</li>
@@ -79,6 +88,16 @@ class HeaderComponent extends Component {
                                 <li className="border-left-navbar">هتل</li>
                                 <li className="border-left-navbar">اجاره ویلا</li>
                                 <li className="border-left-navbar">گردشگری</li>
+                            </ul> */}
+
+                            <ul>
+                                <li >مشاور املاک</li>
+                                <li className="border-left-navbar">کیش</li> 
+                                <li className="border-left-navbar">سیدنی</li>
+                                <li className="border-left-navbar">ونکوور</li>
+                                <li className="border-left-navbar">استانبل</li>
+                                <li className="border-left-navbar">آنتالیا</li>
+                                <li className="border-left-navbar">آنکارا</li> 
                             </ul>
                         </div>
                     
