@@ -51,7 +51,18 @@
 .header-up-right ul li {
     padding: 0 20px;
     color: #333333;
+    cursor: pointer;
+    line-height: 44px;
+    border-bottom: 4px solid transparent;
+    transition: all .2s linear;
 
+
+
+}
+
+.header-up-right ul li:hover { 
+    border-bottom: 4px solid #333333;
+    background-color: #ffb042;
 }
 
 .header-up-left ul li {

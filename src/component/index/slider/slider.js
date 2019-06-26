@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { browserHistory  } from 'react-router'
 import BackgroundSlideshow from 'react-background-slideshow'
 import image1 from '../../../assets/images/001.jpg'
 import image2 from '../../../assets/images/002.jpg'
@@ -18,7 +19,7 @@ class SliderComponent extends Component {
 
 
 
-    _openTab  = () => {
+    _openTab  = (e) => {
    
 
          let btns = document.getElementsByClassName("sliderTab");
@@ -29,10 +30,59 @@ class SliderComponent extends Component {
                     this.className += " active-tab";
                 });
         }
+        this.insertParam('sys',e.target.id)
     }
 
 
+       //
+    // insert and get params from url --------------------------------------------------------->
+    //
+
+    insertParam = async (key, value) => {
+        // push params in url location query
+        await browserHistory.push({
+            pathname: window.location.pathname,
+            query: Object.assign({}, window.location.query, { [key]: value })
+        });
+
+       
+    }
+
+
+    getParms(value) {
+
+        let url_string = window.location.href
+        let url = new URL(url_string);
+
+        const val = url.searchParams.get(value);
+       // // console.log(val)
+        if (val !== null)
+            return val;
+        return 0
+    }
+
+
+
+
     render() { 
+
+        const renderBar = (key) =>{
+
+            switch (key) {
+                case 'hotel':
+                    return  renderHotelBar
+                        break;
+                case 'entertainment':
+                    return  renderEntertainmentBar
+                        break;
+                case 'shop':
+                    return  renderShoplBar
+                        break;
+                default:
+                    return renderHotelBar
+                        break;
+            }
+        } 
 
         const renderHotelBar = (
             <div className="bar-container">
@@ -44,7 +94,7 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="sdsd"  // title of text 
+                            label="تاریخ ورود"  // title of text 
                         />  
                     </li>
                     <li>
@@ -54,7 +104,7 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="ffdfdf"  // title of text 
+                            label="تاریخ خروج"  // title of text 
                         />  
                     </li>
                     <li>
@@ -64,7 +114,117 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="sdfsdfdsf"  // title of text 
+                            label="تعداد مهمان"  // title of text 
+                        />  
+                    </li>
+                    <li></li>
+                    <li>
+                    <Button                                                                  
+                        isLoading={this.state.isLoading}                                    
+                        title={'Send'}                                                      
+                        bgcolor={'#fcb800'}                                                 
+                        hoverbgcolor={'#fcb800'}                                          
+                        click={this.callSubmit} 
+                        color="#fff"
+                        id={'1'}
+                        width={'250px'}
+                        borderRadius={'50px'}
+                    />   
+                    </li>
+                </ul>   
+
+ 
+
+
+            </div>
+        )
+
+        const renderEntertainmentBar = (
+            <div className="bar-container">
+                <ul>
+                    <li>
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="تاریخ "  // title of text 
+                        />  
+                    </li>
+                    <li>
+                    <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="تاریخ خروج"  // title of text 
+                        />  
+                    </li>
+                    <li>
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label=" مهمان"  // title of text 
+                        />  
+                    </li>
+                    <li></li>
+                    <li>
+                    <Button                                                                  
+                        isLoading={this.state.isLoading}                                    
+                        title={'Send'}                                                      
+                        bgcolor={'#fcb800'}                                                 
+                        hoverbgcolor={'#fcb800'}                                          
+                        click={this.callSubmit} 
+                        color="#fff"
+                        id={'1'}
+                        width={'250px'}
+                        borderRadius={'50px'}
+                    />   
+                    </li>
+                </ul>   
+
+ 
+
+
+            </div>
+        )
+
+        const renderShoplBar = (
+            <div className="bar-container">
+                <ul>
+                    <li>
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="تاریخ ورود"  // title of text 
+                        />  
+                    </li>
+                    <li>
+                    <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="تاریخ خروج"  // title of text 
+                        />  
+                    </li>
+                    <li>
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="تعداد مهمان"  // title of text 
                         />  
                     </li>
                     <li></li>
@@ -95,13 +255,13 @@ class SliderComponent extends Component {
                     <div className="bg-slider">
                         <div className="slider-tab-container">
                             <ul>
-                                <li id="tabsHotel" className="sliderTab active-tab" onClick={this._openTab}>هتل</li>
-                                <li id="tabsEntertainment" className="sliderTab" onClick={this._openTab}>گردشگری</li>
-                                <li id="tabsShop" className="sliderTab" onClick={this._openTab}>خرید و فروش</li>
+                                <li id="hotel" className="sliderTab active-tab" onClick={this._openTab}>هتل</li>
+                                <li id="entertainment" className="sliderTab" onClick={this._openTab}>گردشگری</li>
+                                <li id="shop" className="sliderTab" onClick={this._openTab}>خرید و فروش</li>
                             </ul>
                         </div>
                         <div className="slider-main-container">
-                            {renderHotelBar}
+                            {renderBar(this.getParms('sys'))}
                         </div>
                     </div>
              

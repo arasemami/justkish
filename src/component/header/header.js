@@ -103,35 +103,7 @@ class HeaderComponent extends Component {
                     </div>
                 </div>
   {/* responsive header up ---------------------------------------------------------> */}
-                <div className="container-fluid header-up-responsive " >
-                    <div className="container ">
-                        <ul>
-                            
-                            <li>
-                                <a href="#">پنل آژانس ها</a>
-                            </li>
-                                
-                        </ul>
-                        <div>
-                            <div className="custom-select"  >
-                                <select name="cars">
-                                    <option value="audi">گردشگری</option>
-                                    <option value="audi">اجاره ویلا</option>
-                                    <option value="audi">هتل</option>
-                                    <option value="audi">بلیط هواپیما</option>
-                                    <option value="audi">رستوران</option>
-                                    <option value="audi">مشاغل</option>
-                                    <option value="fiat">خرید و فروش</option>
-                                    <option value="saab">صرافی</option>
-                                    <option value="volvo">مشاور املاک</option>
-                                </select>
-                            </div>
-                 
-                        </div>
-                    
-                    </div>
-                </div>
-
+               
 {/* 
                 
                 <div className="container-fluid" >
@@ -169,7 +141,7 @@ class HeaderComponent extends Component {
 
 
                            
-                <div className="container-fluid bg-fff" >
+                <div className="container-fluid bg-fff shadow" >
                     <div className="container" >
                         <div className="navbar">
                             <div className="left">
