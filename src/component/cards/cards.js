@@ -25,8 +25,8 @@ class CardsComponent extends Component {
                     <div className="cards-price">
                         <div className="cards-price-child">
                             <div>
-                                <p style={{direction:'rtl'}}> <sapn> 300.000 </sapn> <span>تومان</span></p>
-                                <p  className="cards-ex-price" style={{direction:'rtl'}}> <sapn> 400.000 </sapn> <span>تومان</span></p>
+                                <p style={{direction:'rtl'}}>30000</p>
+                                <p  className="cards-ex-price" style={{direction:'rtl'}}> 45000</p>
                             </div>
                             <div>
                                 <p style={{color:'#BBBBBB', fontSize:'12px'}}>منتخب جاست کیش</p>

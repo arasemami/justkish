@@ -3,7 +3,7 @@ import BackgroundSlideshow from 'react-background-slideshow'
 import image1 from '../../../assets/images/001.jpg'
 import image2 from '../../../assets/images/002.jpg'
 import image3 from '../../../assets/images/003.jpg'
-import Input from '../../../component/common/input/Input';
+import Input from '../../../component/common/inputHeader/inputHeaderComponent';
 import Button from '../../../component/common/Button/Button';
 
 
@@ -18,19 +18,17 @@ class SliderComponent extends Component {
 
 
 
-    _openTab = (e) => {
+    _openTab  = () => {
    
 
          let btns = document.getElementsByClassName("sliderTab");
         for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active-tab");
-        current[0].className = current[0].className.replace(" active-tab", "");
-        this.className += " active-tab";
-        });
-
-
-    }
+            btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active-tab");
+                    current[0].className = current[0].className.replace(" active-tab", "");
+                    this.className += " active-tab";
+                });
+        }
     }
 
 
@@ -46,7 +44,7 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label=""  // title of text 
+                            label="sdsd"  // title of text 
                         />  
                     </li>
                     <li>
@@ -56,7 +54,7 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label=""  // title of text 
+                            label="ffdfdf"  // title of text 
                         />  
                     </li>
                     <li>
@@ -66,7 +64,7 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label=""  // title of text 
+                            label="sdfsdfdsf"  // title of text 
                         />  
                     </li>
                     <li></li>
