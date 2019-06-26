@@ -13,6 +13,12 @@ class SliderComponent extends Component {
         this.state = {  }
     }
     render() { 
+
+        const renderHotelBar = (
+            <div className="bar-container">
+
+            </div>
+        )
         return ( 
             <div className="container-fluid   slider-custom"   >
                 
@@ -24,6 +30,9 @@ class SliderComponent extends Component {
                                 <li>گردشگری</li>
                                 <li>خرید و فروش</li>
                             </ul>
+                        </div>
+                        <div className="slider-main-container">
+                            {renderHotelBar}
                         </div>
                     </div>
              
