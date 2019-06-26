@@ -15,6 +15,25 @@ class SliderComponent extends Component {
         super(props);
         this.state = {  }
     }
+
+
+
+    _openTab = (e) => {
+   
+
+         let btns = document.getElementsByClassName("sliderTab");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active-tab");
+        current[0].className = current[0].className.replace(" active-tab", "");
+        this.className += " active-tab";
+        });
+
+
+    }
+    }
+
+
     render() { 
 
         const renderHotelBar = (
@@ -31,7 +50,7 @@ class SliderComponent extends Component {
                         />  
                     </li>
                     <li>
-                        <Input 
+                    <Input 
                             type={'text'} 
                             name={'email'}
                             placeholder={'Email'}
@@ -78,9 +97,9 @@ class SliderComponent extends Component {
                     <div className="bg-slider">
                         <div className="slider-tab-container">
                             <ul>
-                                <li>هتل</li>
-                                <li>گردشگری</li>
-                                <li>خرید و فروش</li>
+                                <li id="tabsHotel" className="sliderTab active-tab" onClick={this._openTab}>هتل</li>
+                                <li id="tabsEntertainment" className="sliderTab" onClick={this._openTab}>گردشگری</li>
+                                <li id="tabsShop" className="sliderTab" onClick={this._openTab}>خرید و فروش</li>
                             </ul>
                         </div>
                         <div className="slider-main-container">
