@@ -65,7 +65,7 @@ class HeaderComponent extends Component {
                 </ul>
             </div> */}
 
-              <div className="container-fluid header-up" >
+              <div className="container-fluid header-up header-up-custom  " >
                     <div className="container" >
                         <div className="header-up-left">
                             <ul>
@@ -91,8 +91,7 @@ class HeaderComponent extends Component {
                             </ul> */}
 
                             <ul>
-                                <li >مشاور املاک</li>
-                                <li className="border-left-navbar">کیش</li> 
+                                <li >کیش</li> 
                                 <li className="border-left-navbar">سیدنی</li>
                                 <li className="border-left-navbar">ونکوور</li>
                                 <li className="border-left-navbar">استانبل</li>
@@ -104,7 +103,7 @@ class HeaderComponent extends Component {
                     </div>
                 </div>
   {/* responsive header up ---------------------------------------------------------> */}
-                <div className="container-fluid header-up-responsive" >
+                <div className="container-fluid header-up-responsive " >
                     <div className="container ">
                         <ul>
                             
@@ -170,7 +169,7 @@ class HeaderComponent extends Component {
 
 
                            
-                <div className="container-fluid" >
+                <div className="container-fluid bg-fff" >
                     <div className="container" >
                         <div className="navbar">
                             <div className="left">
@@ -194,13 +193,13 @@ class HeaderComponent extends Component {
 
                             </div>
                             <div className="center">
-                                <div className="btn-search-navbar">
+                                {/* <div className="btn-search-navbar">
                                    <Link to="/search">
                                         <span className="txt-search-navbar">جستجو</span>
                                         <span className="icon-search-navbar">W</span>
                                    </Link>
                                 </div>
-                                <input type="text" placeholder="جستجو کنید . . ." />
+                                <input type="text" placeholder="جستجو کنید . . ." /> */}
                             </div>
                             <div className="right">
                                 <div className="header-logo" >

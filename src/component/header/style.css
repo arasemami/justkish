@@ -7,13 +7,17 @@
     align-items: center;
 }
 
- 
+ .header-up-custom { 
+    background-color: #ffb636;
+    
+ }
 
 .header-up-right {  
     width: 70%;
     height: 50px; 
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
 }
 .header-up-left {  
@@ -24,7 +28,7 @@
 
 }
 .border-left-navbar{
-    border-left: 1px solid #89898936;
+    border-left: 1px solid #efa119;
     padding: 0 5px;
 }
 
@@ -46,7 +50,7 @@
 
 .header-up-right ul li {
     padding: 0 20px;
-    color: #898989;
+    color: #333333;
 
   
 }
@@ -55,7 +59,7 @@
     padding: 0 20px; 
     display: flex;
     align-items: center;
-    color: #898989;
+    color: #333333;
 }
 
 .header-up-left ul li span {
