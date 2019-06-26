@@ -51,7 +51,7 @@
 .header-up-right ul li {
     padding: 0 20px;
     color: #333333;
-    
+
 }
 
 .header-up-left ul li {
@@ -90,7 +90,7 @@
     background-image: url('../../assets/icons/phone.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #fcb800;
+    background-color: #363636;
     border-radius: 500px;
 
 }
