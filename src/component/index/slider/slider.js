@@ -6,6 +6,7 @@ import image2 from '../../../assets/images/002.jpg'
 import image3 from '../../../assets/images/003.jpg'
 import Input from '../../../component/common/inputHeader/inputHeaderComponent';
 import Button from '../../../component/common/Button/Button';
+import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
 
 import './style.css';
@@ -124,7 +125,16 @@ class SliderComponent extends Component {
                     </li>
                     <li></li>
                     <li>
-   
+                        <ButtonSearch                                                                  
+                            isLoading={this.state.isLoading}                                    
+                            title={'جستجو'}                                                      
+                            bgcolor={'#fcb800'}                                                 
+                            hoverbgcolor={'#fcb800'}                                          
+                            click={this.callSubmit} 
+                            color="#fcfcfc"
+                            id={'1'}
+                            borderRadius={'5px'}
+                        />   
                     </li>
                 </ul>   
 

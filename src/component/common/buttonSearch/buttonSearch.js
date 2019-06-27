@@ -1,16 +1,16 @@
 import React from 'react';
 import Radium from 'radium'
-import './Button.css';
+import './style.css';
 
-const button = (props) => (
+const ButtonSearchComponent = (props) => (
     <div  className="button-box" id={props.id} >
         <button className="button-style"  
                 onClick={props.click} 
-                style={{backgroundColor : props.bgcolor ,
-                        width:props.width,
+                style={{backgroundColor : props.bgcolor , 
                         ':hover' : {opacity : '0.8'} ,
                         borderRadius: props.borderRadius ,
-                        color:props.color} } >
+                        color:props.color,
+                        fontSize:'16px'} } >
                     {props.isLoading ? (
                         <div  className="loader-button"></div>
                     ) : (
@@ -22,7 +22,7 @@ const button = (props) => (
     </div>
 );
 
-export default Radium(button);
+export default Radium(ButtonSearchComponent);
 
 
 
