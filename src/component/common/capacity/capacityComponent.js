@@ -22,6 +22,7 @@ class CapacityComponent extends Component {
 
     componentWillMount() {
         document.addEventListener('mousedown', this.handleClick , false)
+        this._getTotalGest();
 
     }
     //
@@ -121,7 +122,11 @@ class CapacityComponent extends Component {
         return ( 
             <div>
                     <div className="counter-person" onClick={() => this._actionModal('show')}>
-                        <span className="capacity-counter-container"  >{this.state.totlaGuest} نفر </span>
+                        <span className="capacity-counter-container"  >
+                           
+                            <span>نفر</span>
+                            <span>{this.state.totlaGuest} </span>
+                        </span>
                         <p className="counter-person-first-title">تعداد مهمان </p> 
                     </div>
                     <div className="counter-person-container" ref={this.CounterPerson}>
