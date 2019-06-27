@@ -6,7 +6,7 @@ import image2 from '../../../assets/images/002.jpg'
 import image3 from '../../../assets/images/003.jpg'
 import Input from '../../../component/common/inputHeader/inputHeaderComponent';
 import Button from '../../../component/common/Button/Button';
-
+import CapacityComponent from '../../../component/common/capacity/capacityComponent'
 
 import './style.css';
 
@@ -16,10 +16,11 @@ class SliderComponent extends Component {
         super(props);
         this.state = {  }
     }
+
+ 
     componentDidMount =() => {
         this._openTab('hotel')
     }
-
 
 
     _openTab  = (key) => {
@@ -63,6 +64,14 @@ class SliderComponent extends Component {
             return val;
         return 0
     }
+
+
+
+
+
+
+
+
 
 
 
@@ -111,14 +120,7 @@ class SliderComponent extends Component {
                         />  
                     </li>
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تعداد مهمان"  // title of text 
-                        />  
+                        <CapacityComponent name="capacity" location={this.props.location} color="#ffb44b"   />
                     </li>
                     <li></li>
                     <li>
