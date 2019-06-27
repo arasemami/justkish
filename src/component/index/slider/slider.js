@@ -9,6 +9,11 @@ import Button from '../../../component/common/Button/Button';
 import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
 
+
+import { DateRangePicker, SingleDatePicker, DateRangePickerWrapper } from 'react-dates';
+import '../../../../node_modules/react-dates/lib/css/_datepicker.css';
+import 'react-dates/initialize'; 
+
 import './style.css';
 
 
@@ -101,14 +106,17 @@ class SliderComponent extends Component {
             <div className="bar-container">
                 <ul>
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ ورود"  // title of text 
-                        />  
+                    <DateRangePicker
+                        isRTL
+                        showClearDates
+                        startDate={this.state.startDate} // momentPropTypes.momentObj or null,
+                        startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,
+                        endDate={this.state.endDate} // momentPropTypes.momentObj or null,
+                        endDateId="your_unique_end_date_id" // PropTypes.string.isRequired,
+                        onDatesChange={({ startDate, endDate }) => this.setState({ startDate, endDate })} // PropTypes.func.isRequired,
+                        focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
+                        onFocusChange={focusedInput => this.setState({ focusedInput })} // PropTypes.func.isRequired,
+                        />
                     </li>
                     <li>
                     <Input 
