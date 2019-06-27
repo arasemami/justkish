@@ -123,7 +123,6 @@ class CapacityComponent extends Component {
             <div>
                     <div className="counter-person" onClick={() => this._actionModal('show')}>
                         <span className="capacity-counter-container"  >
-                           
                             <span>نفر</span>
                             <span>{this.state.totlaGuest} </span>
                         </span>
@@ -148,25 +147,16 @@ export default CapacityComponent;
 /*
  how can use it -------------------------
 
-    //
-    // function to call back value from component
-     _setProps = async(val) =>{
-        await this.setState({
-            person : val
-        })
-       // consol.log(val)
-    }
+ 
 
-
-
-
-     <CapacityComponent 
-        title="title" 
-        name="name" 
-        _returnValue={this._setProps} 
-        desc="details" 
+    <CapacityComponent 
+        name="capacity" 
+        location={this.props.location} 
+        color="#ffb44b"   
     />
 
+
+ 
 
 
 
