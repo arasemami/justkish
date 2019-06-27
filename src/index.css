@@ -263,8 +263,15 @@ a {
 }
 
 .bg-red{
-	background-color: red;
+	background-color: red!important;
 
+}
+.bg-fff {
+	background-color: #ffffff;
+	
+}
+.shadow {
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,.28);
 }
 
 .bg-blue{

@@ -56,7 +56,16 @@ class HeaderComponent extends Component {
 
         return (
             <div className="header">
-              <div className="container-fluid header-up" >
+            {/* <div className="container-fluid header-up city-container" >
+                <ul>
+                    <li>آتنکارا</li>
+                    <li>آتنکارا</li>
+                    <li>آتنکارا</li>
+                    <li>آتنکارا</li>
+                </ul>
+            </div> */}
+
+              <div className="container-fluid header-up header-up-custom  " >
                     <div className="container" >
                         <div className="header-up-left">
                             <ul>
@@ -69,7 +78,7 @@ class HeaderComponent extends Component {
                             </ul>
                         </div>
                         <div className="header-up-right">
-                            <ul>
+                            {/* <ul>
                                 <li >مشاور املاک</li>
                                 <li className="border-left-navbar">صرافی</li>
                                 <li className="border-left-navbar">خرید و فروش</li>
@@ -79,41 +88,22 @@ class HeaderComponent extends Component {
                                 <li className="border-left-navbar">هتل</li>
                                 <li className="border-left-navbar">اجاره ویلا</li>
                                 <li className="border-left-navbar">گردشگری</li>
+                            </ul> */}
+
+                            <ul>
+                                <li >کیش</li> 
+                                <li className="border-left-navbar">سیدنی</li>
+                                <li className="border-left-navbar">ونکوور</li>
+                                <li className="border-left-navbar">استانبل</li>
+                                <li className="border-left-navbar">آنتالیا</li>
+                                <li className="border-left-navbar">آنکارا</li> 
                             </ul>
                         </div>
                     
                     </div>
                 </div>
   {/* responsive header up ---------------------------------------------------------> */}
-                <div className="container-fluid header-up-responsive" >
-                    <div className="container ">
-                        <ul>
-                            
-                            <li>
-                                <a href="#">پنل آژانس ها</a>
-                            </li>
-                                
-                        </ul>
-                        <div>
-                            <div className="custom-select"  >
-                                <select name="cars">
-                                    <option value="audi">گردشگری</option>
-                                    <option value="audi">اجاره ویلا</option>
-                                    <option value="audi">هتل</option>
-                                    <option value="audi">بلیط هواپیما</option>
-                                    <option value="audi">رستوران</option>
-                                    <option value="audi">مشاغل</option>
-                                    <option value="fiat">خرید و فروش</option>
-                                    <option value="saab">صرافی</option>
-                                    <option value="volvo">مشاور املاک</option>
-                                </select>
-                            </div>
-                 
-                        </div>
-                    
-                    </div>
-                </div>
-
+               
 {/* 
                 
                 <div className="container-fluid" >
@@ -151,7 +141,7 @@ class HeaderComponent extends Component {
 
 
                            
-                <div className="container-fluid" >
+                <div className="container-fluid bg-fff shadow" >
                     <div className="container" >
                         <div className="navbar">
                             <div className="left">
@@ -175,13 +165,13 @@ class HeaderComponent extends Component {
 
                             </div>
                             <div className="center">
-                                <div className="btn-search-navbar">
+                                {/* <div className="btn-search-navbar">
                                    <Link to="/search">
                                         <span className="txt-search-navbar">جستجو</span>
                                         <span className="icon-search-navbar">W</span>
                                    </Link>
                                 </div>
-                                <input type="text" placeholder="جستجو کنید . . ." />
+                                <input type="text" placeholder="جستجو کنید . . ." /> */}
                             </div>
                             <div className="right">
                                 <div className="header-logo" >

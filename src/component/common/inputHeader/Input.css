@@ -1,0 +1,36 @@
+
+  .Inputbox-header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    padding: 5px;
+    align-items: center;
+
+
+
+
+  }
+
+
+
+ .input-label {
+   background-color: #fff;
+   padding: 5px;
+   color: #666666
+   
+
+ }
+
+ .Inputbox-header input {
+   color: #333333;
+   background-color: #ffffff; 
+   padding: 5px;
+   direction: rtl;
+   font-weight: 700;
+
+
+
+
+ }
+ 

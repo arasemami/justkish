@@ -25,7 +25,7 @@ class IndexComponent extends Component {
     render() { 
         return ( 
             <div> 
-                <SliderComponent /> 
+                <SliderComponent location={this.props.location} color="red" /> 
                 <UnderHeaderComponent />
                 <div style={{backgroundColor:'#F4F5F5'}}>
                     <VitrinComponent image={img01} title="بهرتین های جزیره کیش" category="گردشگری" /> 

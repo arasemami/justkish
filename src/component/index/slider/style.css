@@ -13,3 +13,117 @@
     padding: 0;
     margin: 0;
 }
+
+.bg-slider {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    /* height: 100%; */
+    /* padding: 61px 0; */
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: url('../../../assets/images/just/istanbul.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+ 
+
+
+}
+
+.slider-tab-container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: yellow; */
+    width: 1200px;
+    margin: auto; 
+  
+    justify-content: flex-end; 
+ 
+
+
+}
+.slider-tab-container ul {
+    display: flex;
+    flex-direction: row-reverse; 
+    /* background-color: green;  */
+ 
+
+   
+    
+}
+.slider-tab-container ul li{
+    /* display: flex;
+    flex-direction: row; */
+    padding: 15px 0;
+    margin: 0 10px;
+    background-color: #333333;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px 5px 0 0; 
+    cursor: pointer;
+    color: #ffffff;
+
+    transition:all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+
+    
+}
+
+.slider-tab-container ul li:hover {
+   
+    background-color: rgba(0, 0, 0, 0.589);
+
+
+}
+
+.active-tab {
+    background-color: rgba(0, 0, 0, 0.589)!important;
+}
+
+.slider-main-container { 
+    width: 1200px;
+    margin: auto;
+    height: 150px;
+
+
+
+}
+
+.bar-container{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 0 5px 5px;
+
+
+}
+
+.bar-container ul {
+
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    padding:  0 25px;
+
+
+    
+}
+.bar-container ul li {
+   
+
+    
+}
+
+.sliderTab {
+
+}
+
+
