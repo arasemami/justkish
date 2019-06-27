@@ -124,17 +124,7 @@ class SliderComponent extends Component {
                     </li>
                     <li></li>
                     <li>
-                    <Button                                                                  
-                        isLoading={this.state.isLoading}                                    
-                        title={'Send'}                                                      
-                        bgcolor={'#fcb800'}                                                 
-                        hoverbgcolor={'#fcb800'}                                          
-                        click={this.callSubmit} 
-                        color="#fff"
-                        id={'1'}
-                        width={'250px'}
-                        borderRadius={'50px'}
-                    />   
+   
                     </li>
                 </ul>   
 
