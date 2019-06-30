@@ -105,6 +105,11 @@ class SliderComponent extends Component {
         return 0
     }
 
+    //
+    //----------------------------------------------------------------------------------------
+    callSearch = (key) => {
+        browserHistory.push('/search')
+    }
 
 
 
@@ -167,7 +172,7 @@ class SliderComponent extends Component {
                             title={'جستجو'}                                                      
                             bgcolor={'#fcb800'}                                                 
                             hoverbgcolor={'#fcb800'}                                          
-                            click={this.callSubmit} 
+                            click={() => this.callSearch('hotel')} 
                             color="#fcfcfc"
                             id={'1'}
                             borderRadius={'5px'}
@@ -206,7 +211,7 @@ class SliderComponent extends Component {
                             title={'جستجو'}                                                      
                             bgcolor={'#fcb800'}                                                 
                             hoverbgcolor={'#fcb800'}                                          
-                            click={this.callSubmit} 
+                            click={() => this.callSearch('hotel')} 
                             color="#fcfcfc"
                             id={'1'}
                             borderRadius={'5px'}
@@ -259,7 +264,7 @@ class SliderComponent extends Component {
                             title={'جستجو'}                                                      
                             bgcolor={'#fcb800'}                                                 
                             hoverbgcolor={'#fcb800'}                                          
-                            click={this.callSubmit} 
+                            click={() => this.callSearch('hotel')} 
                             color="#fcfcfc"
                             id={'1'}
                             borderRadius={'5px'}
