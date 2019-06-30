@@ -11,7 +11,7 @@ import iconArrow from '../../../assets/icons/arrow-down.svg'
 
 
 
-const DropList = (props) => {
+const DropListComponent = (props) => {
 
     const handleFocus = (props) =>{ 
         document.getElementById(props.name).focus();
@@ -24,9 +24,9 @@ const DropList = (props) => {
     )
     
     return (
-        <div className="Inputbox">
-            <p className="input-compinent-label">{props.label}</p>
-            <div  className="input-label">
+        <div className="drop-list-container">
+            {props.label ?  <p className="input-compinent-label">{props.label}</p> : ''}
+            <div  className=" drop-list-select-container">
                <img src={iconArrow} className="droplist-arrow" alt="" />
              <select name={props.name}  onChange={props.changed}>
                 <option   >{props.default}</option>
@@ -45,7 +45,7 @@ const DropList = (props) => {
 
 
 
-export default DropList;
+export default DropListComponent;
 
 
 /*
@@ -61,7 +61,7 @@ example using
         }
 
 
-      <DropList  
+      <DropListComponent  
             name={'email'}
             default={'انتخاب کنید'}
             changed={this.changedHandler}

@@ -228,6 +228,7 @@ transition:all .2s linear
 }
 .custom-select{
     /* width: 100%; */
+    
 }
 .header-up-responsive .container ul{
     justify-content: flex-start;

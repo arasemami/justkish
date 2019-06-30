@@ -11,7 +11,7 @@ import Button from '../../../component/common/Button/Button';
 import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
 import DatePickerComponent from '../../../component/common/datePicker/datePickerComponent';
-
+import DropListComponent from '../../common/dropList/droplistComponent';
 import GetToday from '../../times/getToday';
 
 import moment from 'moment';
@@ -30,6 +30,23 @@ class SliderComponent extends Component {
         super(props);
         this.state = { 
             currentDate :  GetToday('shamsi'),
+            category: [ 
+                {val:'املاک', key:'realest'},
+                {val:'وسیله نقلیه', key:'deactive'},
+                {val:'لوازم الکترونیکی', key:'deactive'},
+                {val:'مربوط به خانه', key:'deactive'},
+                {val:'خدمات', key:'deactive'},
+                {val:'وسایل شخصی', key:'deactive'},
+                {val:'سرگرمی و اسباب بازی', key:'deactive'},
+                {val:'استخدام', key:'deactive'},
+            ],
+            location: [
+                {val:'Ahatlı Mah ', key:'AhatlıMah'}, 
+                {val:'Kepez Mah', key:'KepezMah'}, 
+                {val:'Kültür Mah', key:'KültürMah'}, 
+                {val:'Sentral Mah', key:'SentralMah'}, 
+                {val:'Yeni Doğan Mah', key:'YeniDoğanMah'}, 
+            ]
  
          }
  
@@ -214,26 +231,28 @@ class SliderComponent extends Component {
                     </li>
       
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
+                        <DropListComponent  
+                            name={'category'}
+                            default={'همه آگهی ها'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="همه آگهی ها"  // title of text 
-                        /> 
+                            label=""  // title of text 
+                            data={this.state.category}
+                        />
                     </li>
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
+                    <DropListComponent  
+                            name={'location'}
+                            default={'همه محله ها'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="محله"  // title of text 
-                        /> 
+                            label=""  // title of text 
+                            data={this.state.location}
+                        />
                     </li>
-                    <li></li>
+                    <li>
+
+                    </li>
                     <li>
                         <ButtonSearch                                                                  
                             isLoading={this.state.isLoading}                                    
