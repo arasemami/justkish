@@ -19,9 +19,9 @@ const InputHeaderComponent = (props) => {
     }
     
     return (
-        <div className="Inputbox-header">
-           
-  
+            <div className="input-fix-container">
+                <p>{props.labelTop}</p>  
+                <div className="Inputbox-header"> 
                 <input    type={props.type}
                           onClick={props.clicked} 
                           placeholder=" "
@@ -34,14 +34,10 @@ const InputHeaderComponent = (props) => {
                           value={props.val}
                           readOnly={props.readonly} 
                           />
-                <p className="input-label">{props.label}</p>
-
-               
-               
-
-
+                <p className="input-label">{props.label}</p> 
 
         </div>
+            </div>
     )
 }
 
@@ -60,18 +56,12 @@ example using
             placeholder={'Email'}
             changed={this.changedHandler}
             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-            label=""  // title of text 
+            label="lable"  // title of text
+            labelTop="&nbsp;" // etxra space 
         />
 
 
-                <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ خروج"  // title of text 
-                        /> 
+           
 
                         
 

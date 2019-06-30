@@ -14,7 +14,9 @@
 
   }
 
-
+.input-fix-container {
+  text-align: right;
+}
 
  .input-label {
    background-color: #fff;
