@@ -233,7 +233,16 @@ class SliderComponent extends Component {
                             label="محله"  // title of text 
                         /> 
                     </li>
-                    <li></li>
+                    <li>
+                        <DropList  
+                            name={'email'}
+                            default={'انتخاب کنید'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label=""  // title of text 
+                            data={this.state.status}
+                        />
+                    </li>
                     <li>
                         <ButtonSearch                                                                  
                             isLoading={this.state.isLoading}                                    

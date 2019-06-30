@@ -11,7 +11,7 @@ import iconArrow from '../../../assets/icons/arrow-down.svg'
 
 
 
-const DropList = (props) => {
+const DropListComponent = (props) => {
 
     const handleFocus = (props) =>{ 
         document.getElementById(props.name).focus();
@@ -45,7 +45,7 @@ const DropList = (props) => {
 
 
 
-export default DropList;
+export default DropListComponent;
 
 
 /*
