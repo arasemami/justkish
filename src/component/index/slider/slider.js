@@ -30,10 +30,23 @@ class SliderComponent extends Component {
         super(props);
         this.state = { 
             currentDate :  GetToday('shamsi'),
-            status: [ 
-                {val:'فعال', key:'active'},
-                {val:'غیر فعال', key:'deactive'}
+            category: [ 
+                {val:'املاک', key:'realest'},
+                {val:'وسیله نقلیه', key:'deactive'},
+                {val:'لوازم الکترونیکی', key:'deactive'},
+                {val:'مربوط به خانه', key:'deactive'},
+                {val:'خدمات', key:'deactive'},
+                {val:'وسایل شخصی', key:'deactive'},
+                {val:'سرگرمی و اسباب بازی', key:'deactive'},
+                {val:'استخدام', key:'deactive'},
             ],
+            location: [
+                {val:'Ahatlı Mah ', key:'AhatlıMah'}, 
+                {val:'Kepez Mah', key:'KepezMah'}, 
+                {val:'Kültür Mah', key:'KültürMah'}, 
+                {val:'Sentral Mah', key:'SentralMah'}, 
+                {val:'Yeni Doğan Mah', key:'YeniDoğanMah'}, 
+            ]
  
          }
  
@@ -218,23 +231,23 @@ class SliderComponent extends Component {
                     </li>
       
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="همه آگهی ها"  // title of text 
-                        /> 
-                    </li>
-                    <li>
-                    <DropListComponent  
-                            name={'email'}
-                            default={'انتخاب کنید'}
+                        <DropListComponent  
+                            name={'category'}
+                            default={'همه آگهی ها'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
                             label=""  // title of text 
-                            data={this.state.status}
+                            data={this.state.category}
+                        />
+                    </li>
+                    <li>
+                    <DropListComponent  
+                            name={'location'}
+                            default={'همه محله ها'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label=""  // title of text 
+                            data={this.state.location}
                         />
                     </li>
                     <li>
