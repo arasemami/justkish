@@ -107,8 +107,12 @@ class SliderComponent extends Component {
 
     //
     //----------------------------------------------------------------------------------------
-    callSearch = (key) => {
-        browserHistory.push('/search')
+    callSearch = (key) => { 
+        // get quer params fro url and pass to /search at the url
+        browserHistory.push({
+            pathname: '/search',
+            search: window.location.search 
+          })
     }
 
 
