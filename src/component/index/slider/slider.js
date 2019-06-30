@@ -38,7 +38,8 @@ class SliderComponent extends Component {
     
  
     componentDidMount =() => {
-        this._openTab('hotel')
+        // this._openTab('hotel')
+        this._openTab('shop')
        // moment.locale('fa'); // Polish 
 
     }
@@ -155,17 +156,13 @@ class SliderComponent extends Component {
                             borderRadius={'5px'}
                         />   
                     </li>
-                </ul>   
-
- 
-
-
+                </ul>  
             </div>
         )
 
         const renderEntertainmentBar = (
             <div className="bar-container">
-                             <ul>
+                <ul>
                     <li>  
                         <DatePickerComponent
                             placeholder="تاریخ ورود"
@@ -184,7 +181,7 @@ class SliderComponent extends Component {
 
                     </li>
                     <li>
-                        
+
                     </li>
                     <li>
                         <ButtonSearch                                                                  
@@ -198,66 +195,50 @@ class SliderComponent extends Component {
                             borderRadius={'5px'}
                         />   
                     </li>
-                </ul>   
-
- 
-
-
+                </ul>    
             </div>
         )
 
         const renderShoplBar = (
             <div className="bar-container">
                 <ul>
+                    <li>  
+                        <DatePickerComponent
+                            placeholder="تاریخ ورود"
+                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
+                            name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
+                            location={this.props.location}
+                            currentDate={this.state.currentDate}
+                        /> 
+                    </li>
+      
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ ورود"  // title of text 
-                        />  
+                        <DatePickerComponent
+                            placeholder="تاریخ خروج"
+                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
+                            name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
+                            location={this.props.location}
+                        /> 
                     </li>
                     <li>
-                    <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ خروج"  // title of text 
-                        />  
-                    </li>
-                    <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تعداد مهمان"  // title of text 
-                        />  
+                        <CapacityComponent name="capacity" location={this.props.location} color="#ffb44b"   />
                     </li>
                     <li></li>
                     <li>
-                    <Button                                                                  
-                        isLoading={this.state.isLoading}                                    
-                        title={'Send'}                                                      
-                        bgcolor={'#fcb800'}                                                 
-                        hoverbgcolor={'#fcb800'}                                          
-                        click={this.callSubmit} 
-                        color="#fff"
-                        id={'1'}
-                        width={'250px'}
-                        borderRadius={'50px'}
-                    />   
+                        <ButtonSearch                                                                  
+                            isLoading={this.state.isLoading}                                    
+                            title={'جستجو'}                                                      
+                            bgcolor={'#fcb800'}                                                 
+                            hoverbgcolor={'#fcb800'}                                          
+                            click={this.callSubmit} 
+                            color="#fcfcfc"
+                            id={'1'}
+                            borderRadius={'5px'}
+                        />   
                     </li>
-                </ul>   
-
- 
-
-
+                </ul>  
             </div>
         )
         return ( 
