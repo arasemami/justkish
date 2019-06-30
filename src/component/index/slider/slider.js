@@ -203,27 +203,35 @@ class SliderComponent extends Component {
             <div className="bar-container">
                 <ul>
                     <li>  
-                        <DatePickerComponent
-                            placeholder="تاریخ ورود"
-                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
-                            name={'dateStart'}
-                            type="date" // can be date or timestamp  defualt is timestamp
-                            location={this.props.location}
-                            currentDate={this.state.currentDate}
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="جتسجو آگهی"  // title of text 
                         /> 
                     </li>
       
                     <li>
-                        <DatePickerComponent
-                            placeholder="تاریخ خروج"
-                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
-                            name={'dateStart'}
-                            type="date" // can be date or timestamp  defualt is timestamp
-                            location={this.props.location}
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="همه آگهی ها"  // title of text 
                         /> 
                     </li>
                     <li>
-                        <CapacityComponent name="capacity" location={this.props.location} color="#ffb44b"   />
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="محله"  // title of text 
+                        /> 
                     </li>
                     <li></li>
                     <li>
