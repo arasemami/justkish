@@ -10,6 +10,7 @@ import Input from '../../../component/common/inputHeader/inputHeaderComponent';
 import Button from '../../../component/common/Button/Button';
 import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
+import DatePickerComponent from '../../../component/common/datePicker/datePickerComponent';
 
  
 
@@ -127,16 +128,12 @@ class SliderComponent extends Component {
             <div className="bar-container">
         
                 <ul>
-                    <li> 
-                     
-
-              
-
- 
-
-
-
-
+                    <li>  
+                        <DatePickerComponent
+                            placeholder="تاریخ شروع"
+                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
+                            name={'dateStart'}
+                        /> 
                     </li>
       
                     <li>
