@@ -11,15 +11,10 @@ import Button from '../../../component/common/Button/Button';
 import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
 
-import 'react-dates/initialize';
-import 'react-dates/lib/css/_datepicker.css';
+ 
 
 import moment from 'moment';
 import momentJalaali from 'moment-jalaali';
-import { DateRangePicker, SingleDatePicker, 
-    DayPickerRangeController , DateRangePickerWrapper } from 'react-dates';
-
- 
  
 
 
@@ -34,17 +29,9 @@ class SliderComponent extends Component {
         super(props);
         this.state = { 
 
-            startDate: momentJalaali(),
-            endDate: null,
-            focusedInput: "startDate"
-            
-            // startDate: moment.locale('fa'), 
-            // endDate:moment('Sun Jan 16 2019 15:45:17 GMT+0330 (Iran Standard Time)') 
+ 
          }
-
-         moment.locale("fa");
-        //  momentJalaali().format('jYYYY/jM/jD'); 
-         momentJalaali.loadPersian();
+ 
     }
 
     
@@ -143,32 +130,9 @@ class SliderComponent extends Component {
                     <li> 
                      
 
-                    <DateRangePicker 
-                    // date={moment}
-                     // stateDateWrapper={momentJalaali(new Intl.DateTimeFormat("fa-IR"))}
-                    startDate={this.state.startDate} // momentPropTypes.momentObj or null,
-                    startDateId={this.state.endDate} // PropTypes.string.isRequired,
-                    endDate={this.state.endDate} // momentPropTypes.momentObj or null,
-                    endDateId="your_unique_end_date_id" // PropTypes.string.isRequired,
-                    onDatesChange={({ startDate, endDate }) => this.setState({ startDate, endDate })} // PropTypes.func.isRequired,
-                    focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
-                    onFocusChange={focusedInput => this.setState({ focusedInput })} // PropTypes.func.isRequired,
-                    // renderMonthText={(month) => moment(month).locale('fa-IR').format('MMMM')}
-                    // renderMonthText={(month) => console.log(month)} 
-                    //  renderMonthText={(month) => moment.locale('fa')} 
-                    // monthFormat={'DD MM YYYY'}
-                        />
+              
 
-{/* <DateRangePicker
-    startDate={this.state.startDate} //moment startDate if you have not set this property,it automatically sets to today
-    endDate={this.state.endDate} //moment endDate
-    onFocusChange={focusedInput => this.setState({ focusedInput })} 
-    isRTL={true}
-    onDatesChange={this.onDatesChange}//function set startDate and endDate
-    focusedInput={this.state.focusedInput}//similar to airbnb api-open\close
-    showClearDates={true}
-    monthFormat={'jMMMM jYYYY'}//for persian:'jMMMM jYYYY', for english :'MMMM YYYY'
-   /> */}
+ 
 
 
 
