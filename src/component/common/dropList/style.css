@@ -20,9 +20,13 @@ option:first-child {
   border-radius: 4px;
   box-shadow: 0 1px 8px #E8E8E8;
   text-align: center;
-  width: 200px;
+  width: 100%;
   direction: rtl;
+  min-width: 200px;
 
+}
+.drop-list-select-container {
+  width: 100%;
 }
 
 
