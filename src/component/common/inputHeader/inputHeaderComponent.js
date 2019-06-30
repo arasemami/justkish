@@ -64,4 +64,16 @@ example using
         />
 
 
+                <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="تاریخ خروج"  // title of text 
+                        /> 
+
+                        
+
+
 */

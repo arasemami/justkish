@@ -12,7 +12,7 @@ import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
 import DatePickerComponent from '../../../component/common/datePicker/datePickerComponent';
 
- 
+import GetToday from '../../times/getToday';
 
 import moment from 'moment';
 import momentJalaali from 'moment-jalaali';
@@ -29,7 +29,7 @@ class SliderComponent extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-
+            currentDate :  GetToday('shamsi'),
  
          }
  
@@ -121,23 +121,23 @@ class SliderComponent extends Component {
                 <ul>
                     <li>  
                         <DatePickerComponent
-                            placeholder="تاریخ شروع"
+                            placeholder="تاریخ ورود"
+                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
+                            name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
+                            location={this.props.location}
+                            currentDate={this.state.currentDate}
+                        /> 
+                    </li>
+      
+                    <li>
+                        <DatePickerComponent
+                            placeholder="تاریخ خروج"
                             // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
                             name={'dateStart'}
                             type="date" // can be date or timestamp  defualt is timestamp
                             location={this.props.location}
                         /> 
-                    </li>
-      
-                    <li>
-                    <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ خروج"  // title of text 
-                        />  
                     </li>
                     <li>
                         <CapacityComponent name="capacity" location={this.props.location} color="#ffb44b"   />
