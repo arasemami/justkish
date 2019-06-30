@@ -24,7 +24,7 @@ const DropListComponent = (props) => {
     )
     
     return (
-        <div className="Inputbox">
+        <div className="drop-list-container">
             {props.label ?  <p className="input-compinent-label">{props.label}</p> : ''}
             <div  className=" ">
                <img src={iconArrow} className="droplist-arrow" alt="" />

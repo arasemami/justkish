@@ -1,19 +1,10 @@
- .input-label select {
-  -webkit-appearance: none;
-  width: 100%;
-  font-family: inherit;
-  padding:5px 10px;
-  height: 40px;
-  border: 1px solid #E5E5E5;
-  font-size: 14px;
-  font-weight: 500;
-  background: none;
-  border-radius: 5px; 
-  background-color: #fff;
-  transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
-  color: #0090CF!important;
-
-} 
+ .drop-list-container { 
+  display: flex;
+  flex-direction: row;
+  border-radius: 3px; 
+  align-items: center;
+  position: relative;
+ }
 
 
 option:not(first-child) {
@@ -23,6 +14,16 @@ option:not(first-child) {
 option:first-child {
   color: #aeaeae;
 }
+.drop-list-container select {
+  background-color: #fcfcfc;
+  padding:10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px #E8E8E8;
+  text-align: center;
+  width: 200px;
+  direction: rtl;
+
+}
 
 
 .droplist-arrow {
@@ -31,4 +32,19 @@ option:first-child {
   left: 10px;
   top: 12px;
 
+}
+
+
+
+ .drop-list-container  select::-ms-expand {
+  display: none;
+}
+
+ .drop-list-container  select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+ 
+ .drop-list-container  select:hover::-ms-expand {
+  display: block;
 }
