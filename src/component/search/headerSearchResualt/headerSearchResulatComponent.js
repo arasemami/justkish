@@ -48,7 +48,10 @@ class HeaderSearchResualt extends Component {
                     </li> 
           
                 </ul>  
-                <ul>
+
+
+
+                <ul className="search-resualt-container">
                     <li>
                         <div className="search-resualt-price-container">
                         <InputFix 
@@ -74,6 +77,7 @@ class HeaderSearchResualt extends Component {
                     </li>
                     <li></li>
                     <li> 
+                        <p>&nbsp;</p>
                         <ButtonSearch                                                                  
                             isLoading={this.state.isLoading}                                    
                             title={'جستجو'}                                                      
