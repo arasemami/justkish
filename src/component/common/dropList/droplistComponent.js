@@ -25,8 +25,8 @@ const DropListComponent = (props) => {
     
     return (
         <div className="Inputbox">
-            <p className="input-compinent-label">{props.label}</p>
-            <div  className="input-label">
+            {props.label ?  <p className="input-compinent-label">{props.label}</p> : ''}
+            <div  className=" ">
                <img src={iconArrow} className="droplist-arrow" alt="" />
              <select name={props.name}  onChange={props.changed}>
                 <option   >{props.default}</option>
@@ -61,7 +61,7 @@ example using
         }
 
 
-      <DropList  
+      <DropListComponent  
             name={'email'}
             default={'انتخاب کنید'}
             changed={this.changedHandler}

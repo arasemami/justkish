@@ -11,7 +11,7 @@ import Button from '../../../component/common/Button/Button';
 import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
 import DatePickerComponent from '../../../component/common/datePicker/datePickerComponent';
-
+import DropListComponent from '../../common/dropList/droplistComponent';
 import GetToday from '../../times/getToday';
 
 import moment from 'moment';
@@ -30,6 +30,10 @@ class SliderComponent extends Component {
         super(props);
         this.state = { 
             currentDate :  GetToday('shamsi'),
+            status: [ 
+                {val:'فعال', key:'active'},
+                {val:'غیر فعال', key:'deactive'}
+            ],
  
          }
  
@@ -224,17 +228,7 @@ class SliderComponent extends Component {
                         /> 
                     </li>
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="محله"  // title of text 
-                        /> 
-                    </li>
-                    <li>
-                        <DropList  
+                    <DropListComponent  
                             name={'email'}
                             default={'انتخاب کنید'}
                             changed={this.changedHandler}
@@ -242,6 +236,9 @@ class SliderComponent extends Component {
                             label=""  // title of text 
                             data={this.state.status}
                         />
+                    </li>
+                    <li>
+
                     </li>
                     <li>
                         <ButtonSearch                                                                  
