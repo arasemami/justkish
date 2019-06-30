@@ -75,15 +75,6 @@ class SliderComponent extends Component {
 
 
 
-
-
-
- 
-
-
-
-
-
     getParms(value) {
 
         let url_string = window.location.href
@@ -133,6 +124,8 @@ class SliderComponent extends Component {
                             placeholder="تاریخ شروع"
                             // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
                             name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
+                            location={this.props.location}
                         /> 
                     </li>
       

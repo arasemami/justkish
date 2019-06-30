@@ -5,7 +5,7 @@ npm install --save react-advance-jalaali-datepicker
 */
 
 import React , { Component } from 'react';
-
+import { browserHistory } from 'react-router';
 import './style.css';
 import {  DatePicker } from "react-advance-jalaali-datepicker";
 
@@ -37,10 +37,25 @@ class DatePickerComponent extends Component {
      }
 
 
-         //
+    //
     // date picker selector funcation ---------------------------------------------- 
-    change = (unix, formatted, val) => { 
-        this.insertParam(val,formatted);  // insert date shamsi
+    change = (unix, formatted, name , type) => { 
+        if(type === 'date')
+            return this.insertParam(name,formatted);  // insert date shamsi
+        return this.insertParam(name,unix);
+    }
+ 
+
+    //
+    // insert and get params from url --------------------------------------------------------->
+    insertParam = async (key, value) => {
+        // push params in url location query
+        await browserHistory.push({
+            pathname: this.props.location.pathname,
+            query: Object.assign({}, this.props.location.query, { [key]: value })
+        });
+
+       
     }
 
 
@@ -59,12 +74,13 @@ class DatePickerComponent extends Component {
                      <div className="date-picker-component">
                         <DatePicker
                                 format="jYYYY/jMM/jDD"
-                                onChange={this.change}  
+                                onChange={(  unix, formatted ) => this.change(unix, formatted, this.props.name, this.props.type)}  
                                 inputComponent={this.DatePickerInput}
                                 placeholder={this.props.currentDate}
                                 id={this.props.name}
                                 preSelected={this.props.currentDate}  
                                 cancelOnBackgroundClick={true}
+                                typeResult={this.props.type}
                                 // controllValue={true}
                            
                             />
@@ -85,8 +101,8 @@ example using
    
                         <DatePickerComponent
                             placeholder="تاریخ شروع"
-                            change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
                             name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
                         />
 
 
