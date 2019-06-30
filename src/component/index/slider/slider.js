@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import ReactDOM from "react-dom";
+
 import { browserHistory  } from 'react-router'
 import BackgroundSlideshow from 'react-background-slideshow'
 import image1 from '../../../assets/images/001.jpg'
@@ -8,19 +10,38 @@ import Input from '../../../component/common/inputHeader/inputHeaderComponent';
 import Button from '../../../component/common/Button/Button';
 import ButtonSearch from '../../../component/common/buttonSearch/buttonSearch';
 import CapacityComponent from '../../../component/common/capacity/capacityComponent'
+import DatePickerComponent from '../../../component/common/datePicker/datePickerComponent';
+
+import GetToday from '../../times/getToday';
+
+import moment from 'moment';
+import momentJalaali from 'moment-jalaali';
+ 
+
+
 
 import './style.css';
 
-
+// moment.locale("fa");
+// momentJalaali.loadPersian();
+moment.locale("fa");
 class SliderComponent extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            currentDate :  GetToday('shamsi'),
+ 
+         }
+ 
     }
 
+    
  
     componentDidMount =() => {
-        this._openTab('hotel')
+        // this._openTab('hotel')
+        this._openTab('shop')
+       // moment.locale('fa'); // Polish 
+
     }
 
 
@@ -54,6 +75,7 @@ class SliderComponent extends Component {
     }
 
 
+
     getParms(value) {
 
         let url_string = window.location.href
@@ -69,15 +91,12 @@ class SliderComponent extends Component {
 
 
 
-
-
-
-
-
-
-
-
     render() { 
+
+        momentJalaali.loadPersian();  // >>>>>>>>>> This change locale to Persian successfully but how to change calendar system?
+        moment.locale("fa");
+
+
 
         const renderBar = (key) =>{
 
@@ -99,26 +118,27 @@ class SliderComponent extends Component {
 
         const renderHotelBar = (
             <div className="bar-container">
+        
                 <ul>
-                    <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ ورود"  // title of text 
-                        />  
+                    <li>  
+                        <DatePickerComponent
+                            placeholder="تاریخ ورود"
+                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
+                            name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
+                            location={this.props.location}
+                            currentDate={this.state.currentDate}
+                        /> 
                     </li>
+      
                     <li>
-                    <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ خروج"  // title of text 
-                        />  
+                        <DatePickerComponent
+                            placeholder="تاریخ خروج"
+                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
+                            name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
+                            location={this.props.location}
+                        /> 
                     </li>
                     <li>
                         <CapacityComponent name="capacity" location={this.props.location} color="#ffb44b"   />
@@ -136,72 +156,63 @@ class SliderComponent extends Component {
                             borderRadius={'5px'}
                         />   
                     </li>
-                </ul>   
-
- 
-
-
+                </ul>  
             </div>
         )
 
         const renderEntertainmentBar = (
             <div className="bar-container">
                 <ul>
+                    <li>  
+                        <DatePickerComponent
+                            placeholder="تاریخ ورود"
+                            // change={(  unix, formatted , val) => this.change(unix, formatted, 'dateStart')}
+                            name={'dateStart'}
+                            type="date" // can be date or timestamp  defualt is timestamp
+                            location={this.props.location}
+                            currentDate={this.state.currentDate}
+                        /> 
+                    </li>
+       
                     <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ "  // title of text 
-                        />  
+                        <CapacityComponent name="capacity" location={this.props.location} color="#ffb44b"   />
                     </li>
                     <li>
-                    <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ خروج"  // title of text 
-                        />  
-                    </li>
-                    <li>
-                        <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label=" مهمان"  // title of text 
-                        />  
-                    </li>
-                    <li></li>
-                    <li>
-                    <Button                                                                  
-                        isLoading={this.state.isLoading}                                    
-                        title={'Send'}                                                      
-                        bgcolor={'#fcb800'}                                                 
-                        hoverbgcolor={'#fcb800'}                                          
-                        click={this.callSubmit} 
-                        color="#fff"
-                        id={'1'}
-                        width={'250px'}
-                        borderRadius={'50px'}
-                    />   
-                    </li>
-                </ul>   
 
- 
+                    </li>
+                    <li>
 
-
+                    </li>
+                    <li>
+                        <ButtonSearch                                                                  
+                            isLoading={this.state.isLoading}                                    
+                            title={'جستجو'}                                                      
+                            bgcolor={'#fcb800'}                                                 
+                            hoverbgcolor={'#fcb800'}                                          
+                            click={this.callSubmit} 
+                            color="#fcfcfc"
+                            id={'1'}
+                            borderRadius={'5px'}
+                        />   
+                    </li>
+                </ul>    
             </div>
         )
 
         const renderShoplBar = (
             <div className="bar-container">
                 <ul>
+                    <li>  
+                        <Input 
+                            type={'text'} 
+                            name={'email'}
+                            placeholder={'Email'}
+                            changed={this.changedHandler}
+                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                            label="جتسجو آگهی"  // title of text 
+                        /> 
+                    </li>
+      
                     <li>
                         <Input 
                             type={'text'} 
@@ -209,18 +220,8 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ ورود"  // title of text 
-                        />  
-                    </li>
-                    <li>
-                    <Input 
-                            type={'text'} 
-                            name={'email'}
-                            placeholder={'Email'}
-                            changed={this.changedHandler}
-                            error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تاریخ خروج"  // title of text 
-                        />  
+                            label="همه آگهی ها"  // title of text 
+                        /> 
                     </li>
                     <li>
                         <Input 
@@ -229,28 +230,23 @@ class SliderComponent extends Component {
                             placeholder={'Email'}
                             changed={this.changedHandler}
                             error={this.state.forgetEmailError} // if you want show error pass error text to this props
-                            label="تعداد مهمان"  // title of text 
-                        />  
+                            label="محله"  // title of text 
+                        /> 
                     </li>
                     <li></li>
                     <li>
-                    <Button                                                                  
-                        isLoading={this.state.isLoading}                                    
-                        title={'Send'}                                                      
-                        bgcolor={'#fcb800'}                                                 
-                        hoverbgcolor={'#fcb800'}                                          
-                        click={this.callSubmit} 
-                        color="#fff"
-                        id={'1'}
-                        width={'250px'}
-                        borderRadius={'50px'}
-                    />   
+                        <ButtonSearch                                                                  
+                            isLoading={this.state.isLoading}                                    
+                            title={'جستجو'}                                                      
+                            bgcolor={'#fcb800'}                                                 
+                            hoverbgcolor={'#fcb800'}                                          
+                            click={this.callSubmit} 
+                            color="#fcfcfc"
+                            id={'1'}
+                            borderRadius={'5px'}
+                        />   
                     </li>
-                </ul>   
-
- 
-
-
+                </ul>  
             </div>
         )
         return ( 
@@ -268,6 +264,8 @@ class SliderComponent extends Component {
                         <div className="slider-main-container">
                             {renderBar(this.getParms('sys'))}
                         </div>
+
+                 
                     </div>
              
              

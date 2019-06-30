@@ -73,20 +73,7 @@
     border-bottom: 1px   solid #f1f1f1; */
 
 }
-
-table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse; 
-  }
-  
  
-  
-  th, td {
-    padding: 20px;
-  }
-
-
 
 
 

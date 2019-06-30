@@ -1,5 +1,3 @@
-git checkout master
-git pull
 npm ci
 rm -rf build
 npm run build

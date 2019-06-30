@@ -127,3 +127,25 @@
 }
 
 
+
+
+
+
+.container-date-picker{
+    width: 300px;
+}
+
+.DateRangePickerInput__withBorder {
+
+border: 0!important;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+  
+  }

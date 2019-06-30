@@ -1,0 +1,34 @@
+ .input-label select {
+  -webkit-appearance: none;
+  width: 100%;
+  font-family: inherit;
+  padding:5px 10px;
+  height: 40px;
+  border: 1px solid #E5E5E5;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border-radius: 5px; 
+  background-color: #fff;
+  transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
+  color: #0090CF!important;
+
+} 
+
+
+option:not(first-child) {
+  color: #0090CF;
+}
+
+option:first-child {
+  color: #aeaeae;
+}
+
+
+.droplist-arrow {
+  width: 15px;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+
+}
