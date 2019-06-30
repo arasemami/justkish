@@ -14,8 +14,8 @@ class HeaderSearchResualt extends Component {
     render() { 
         return ( 
             <div className="header-search-resualt">
-                <ul className="search-resualt-price-container">
-                    <li>  
+                <ul className="search-resualt-container">
+                    <li className="custome-search-header">  
                         <InputFix 
                             type={'text'} 
                             name={'email'}
@@ -45,22 +45,8 @@ class HeaderSearchResualt extends Component {
                             label=""  // title of text 
                             data={this.state.location}
                         />
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-                        <ButtonSearch                                                                  
-                            isLoading={this.state.isLoading}                                    
-                            title={'جستجو'}                                                      
-                            bgcolor={'#fcb800'}                                                 
-                            hoverbgcolor={'#fcb800'}                                          
-                            click={() => this.callSearch('hotel')} 
-                            color="#fcfcfc"
-                            id={'1'}
-                            borderRadius={'5px'}
-                        />   
-                    </li>
+                    </li> 
+          
                 </ul>  
                 <ul>
                     <li>
@@ -85,6 +71,19 @@ class HeaderSearchResualt extends Component {
                             
                         /> 
                         </div>
+                    </li>
+                    <li></li>
+                    <li> 
+                        <ButtonSearch                                                                  
+                            isLoading={this.state.isLoading}                                    
+                            title={'جستجو'}                                                      
+                            bgcolor={'#fcb800'}                                                 
+                            hoverbgcolor={'#fcb800'}                                          
+                            click={() => this.callSearch('hotel')} 
+                            color="#fcfcfc"
+                            id={'1'}
+                            borderRadius={'5px'}
+                        />   
                     </li>
                 </ul>
             </div>

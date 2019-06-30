@@ -6,11 +6,21 @@
     padding: 20px 10px;
 
 }
-
+.search-resualt-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 
 .search-resualt-price-container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center; 
+}
+.custome-search-header {
+    width: 60%;
+    
 }
 
