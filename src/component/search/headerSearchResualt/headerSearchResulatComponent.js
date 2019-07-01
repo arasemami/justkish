@@ -3,6 +3,7 @@ import './style.css';
 import InputFix from '../../common/inputHeader/inputHeaderComponent';
 import DropListComponent from '../../common/dropList/droplistComponent';
 import ButtonSearch from '../../common/buttonSearch/buttonSearch';
+import SpecialSearchComponent from '../specialSearch/specialSearchComponent';
 
 
 
@@ -75,7 +76,9 @@ class HeaderSearchResualt extends Component {
                         /> 
                         </div>
                     </li>
-                    <li></li>
+                    <li>
+                        <SpecialSearchComponent />
+                    </li>
                     <li> 
                         <p>&nbsp;</p>
                         <ButtonSearch                                                                  
