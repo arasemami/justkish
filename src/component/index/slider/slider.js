@@ -77,7 +77,7 @@ class SliderComponent extends Component {
     }
 
 
-       //
+    //
     // insert and get params from url --------------------------------------------------------->
     //
 
