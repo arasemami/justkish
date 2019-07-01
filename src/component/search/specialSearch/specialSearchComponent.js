@@ -11,7 +11,6 @@ class SpecialSearchComponent extends Component {
     render() { 
         return ( 
             <div className="switch-card-container">
-               
                 <SwitchComponent ame="two" label="آگهی های ویژه"/>
                 <SwitchComponent ame="one" label="عکس دار"/>
             </div>
