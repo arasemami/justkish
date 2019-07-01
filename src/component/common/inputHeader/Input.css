@@ -6,13 +6,17 @@
     border-radius: 3px;
     padding: 5px;
     align-items: center;
-
+    margin: 0 3px;
+    min-width: 100px;
+    box-shadow: 0 1px 8px #E8E8E8;
 
 
 
   }
 
-
+.input-fix-container {
+  text-align: right;
+}
 
  .input-label {
    background-color: #fff;

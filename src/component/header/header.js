@@ -91,10 +91,7 @@ class HeaderComponent extends Component {
                             </ul> */}
 
                             <ul>
-                                <li >کیش</li> 
-                                <li className="border-left-navbar">سیدنی</li>
-                                <li className="border-left-navbar">ونکوور</li>
-                                <li className="border-left-navbar">استانبل</li>
+                                <li>استانبل</li>
                                 <li className="border-left-navbar">آنتالیا</li>
                                 <li className="border-left-navbar">آنکارا</li> 
                             </ul>

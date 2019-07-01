@@ -2,6 +2,7 @@
 import React , { Component } from 'react';
 import './style.css';
 import CardsComponent from '../../component/cards/cards';
+import HeaderSearchResualt from '../../component/search/headerSearchResualt/headerSearchResulatComponent';
 
 
 
@@ -14,7 +15,9 @@ class SearchContainer extends Component {
     render() { 
         return ( 
             <div className="contaniner-flui bg-f9f9f9">
+          
                 <div className="container">
+                    <HeaderSearchResualt />
                     <div className="row-flex">
                         <div className="search-post-box">
                             <CardsComponent title="تورهای زیبا"/> 

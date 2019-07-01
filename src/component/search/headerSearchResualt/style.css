@@ -1,0 +1,26 @@
+.header-search-resualt {
+    width: 100%; 
+    background-color: #f5f5f5;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 20px 10px;
+
+}
+.search-resualt-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.search-resualt-price-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+}
+.custome-search-header {
+    width: 60%;
+    
+}
+

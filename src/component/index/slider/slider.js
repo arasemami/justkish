@@ -105,6 +105,15 @@ class SliderComponent extends Component {
         return 0
     }
 
+    //
+    //----------------------------------------------------------------------------------------
+    callSearch = (key) => { 
+        // get quer params fro url and pass to /search at the url
+        browserHistory.push({
+            pathname: '/search',
+            search: window.location.search 
+          })
+    }
 
 
 
@@ -167,7 +176,7 @@ class SliderComponent extends Component {
                             title={'جستجو'}                                                      
                             bgcolor={'#fcb800'}                                                 
                             hoverbgcolor={'#fcb800'}                                          
-                            click={this.callSubmit} 
+                            click={() => this.callSearch('hotel')} 
                             color="#fcfcfc"
                             id={'1'}
                             borderRadius={'5px'}
@@ -206,7 +215,7 @@ class SliderComponent extends Component {
                             title={'جستجو'}                                                      
                             bgcolor={'#fcb800'}                                                 
                             hoverbgcolor={'#fcb800'}                                          
-                            click={this.callSubmit} 
+                            click={() => this.callSearch('hotel')} 
                             color="#fcfcfc"
                             id={'1'}
                             borderRadius={'5px'}
@@ -259,7 +268,7 @@ class SliderComponent extends Component {
                             title={'جستجو'}                                                      
                             bgcolor={'#fcb800'}                                                 
                             hoverbgcolor={'#fcb800'}                                          
-                            click={this.callSubmit} 
+                            click={() => this.callSearch('hotel')} 
                             color="#fcfcfc"
                             id={'1'}
                             borderRadius={'5px'}
