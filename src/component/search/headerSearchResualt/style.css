@@ -24,3 +24,50 @@
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .search-resualt-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .search-resualt-container li {
+        margin: 7px 0;
+        width: 100%;
+        padding: 0;
+    }
+    .custome-search-header { 
+
+    }
+
+    .container {
+       max-width: 100%;
+       width: 100%;
+       padding: 0;
+
+    }
+
+    .search-resualt-price-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

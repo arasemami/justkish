@@ -77,6 +77,7 @@ class HeaderSearchResualt extends Component {
                         </div>
                     </li>
                     <li>
+                        <p>&nbsp;</p>
                         <SpecialSearchComponent />
                     </li>
                     <li> 

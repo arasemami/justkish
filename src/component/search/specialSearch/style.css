@@ -1,8 +1,11 @@
 
-.card-container {
+.switch-card-container{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    padding: 10px;
-    background-color: red;
+    padding: 10px;  
+    
+
 
 }
 

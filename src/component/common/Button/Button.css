@@ -15,9 +15,6 @@
 }
 
 
-
-
-
 .loader-button {
     border: 3px solid #f3f3f3; /* Light grey */
     border-top: 3px solid transparent; 
@@ -94,5 +91,13 @@
     }
     100% {
       transform: translate(19px, 0);
+    }
+  }
+
+
+
+  @media screen and (max-width:800px) {
+    .button-style {
+      width: 100%!important;
     }
   }
