@@ -7,6 +7,7 @@ import RootScreen from './root';
  import IndexScreen from './container/index/index';
  import SearchResualtScreen from './container/searchResult/searchResultComponent';
  import SearchShoppScreen from './container/search/shopp/searchShoppComponent';
+ import SearchEntertainmentScreen from './container/search/entertainment/searchEntertainmentComponent';
  
  import loginScreen from './container/auth/loginComponent';
  
@@ -39,6 +40,8 @@ class RouterComponent extends Component {
                         <Route path="/shoping" component={shopingScreen} ></Route> 
                         <Route path="/search" component={searchScreen} ></Route> 
                         <Route path="/shopp" component={SearchShoppScreen} ></Route> 
+                        <Route path="/entertainment" component={SearchEntertainmentScreen} ></Route> 
+                        <Route path="/hotel" component={SearchEntertainmentScreen} ></Route> 
                         <Route path="/dashboard" component={dashboardScreen} ></Route> 
                         <Route path="/profile" component={profileScreen}   ></Route> 
                 </Route>    

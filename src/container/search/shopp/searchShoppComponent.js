@@ -7,7 +7,7 @@ import HeaderSearchResualt from '../../../component/search/headerSearchResualt/h
 
 
 
-class SearchContainer extends Component {
+class SearchShoppContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -39,4 +39,4 @@ class SearchContainer extends Component {
     }
 }
  
-export default SearchContainer;
+export default SearchShoppContainer;
